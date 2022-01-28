@@ -35,14 +35,40 @@
                         </div>
                     </div>
                     <div class="menu__burger burger">
-                        <div class="burger__item"></div>
-                        <div class="burger__item"></div>
-                        <div class="burger__item"></div>
-                        <div class="burger__item"></div>
+                        <span></span>
                     </div>
                 </nav>
             </div>
         </header>
+        <div class="sidebar" hidden>
+            <div class="sidebar__content">
+                <nav class="sidebar__menu">
+                    <!-- <div class="sidebar__label">garden.squad</div> -->
+                    <ul class="sidebar__links">
+                        <li class="sidebar__link">
+                            <a href="">catalog</a>
+                        </li>
+                        <li class="sidebar__link">
+                            <a href="">delivery</a>
+                        </li>
+                        <li class="sidebar__link">
+                            <a href="">about us</a>
+                        </li>
+                        <li class="sidebar__link">
+                            <a href="">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sidebar__footer">
+                    <div class="sidebar__account user">
+                        <div class="user__profile">Victoria M.</div>
+                        <div class="user__basket">
+                            <img src="img/header/shopping-bag.svg" alt="basket__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="garden">
             <div class="garden__container container">
                 <div class="garden__content">
@@ -214,7 +240,71 @@
                 </div>
             </div>
         </section>
+        <section class="banner">
+            <div class="banner__container container">
+                <h2 class="banner__content">Our experience — more than 10 years of quality work throughout the United States.</h2>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <h3 class="footer__title">Contact us.</h3>
+                <p class="footer__text"> We are always happy to help you.</p>
+                <div class="footer__body">
+                    <form action="127.0.0.1:3000" class="footer__form form">
+                        <div class="form__link link"><span>Send us a message</span></div>
+                        <div class="form__inputs">
+                            <input class="form__input" type="text" placeholder="First Name*" />
+                            <input class="form__input" type="text" placeholder="Last Name" />
+                            <input class="form__input" type="email" placeholder="Email" />
+                            <input class="form__input" type="tel" placeholder="Phone*" />
+                        </div>
+                        <textarea class="form__message" name="message" placeholder="Write a message*"></textarea>
+                        <div class="form__submit">
+                            <input class="form__checkbox" type="checkbox" checked name="submit" id="submit" />
+                            <label for="submit">Subscribe to email newsletter</label>
+                        </div>
+                        <button class="form__button button" type="submit">Submit</button>
+                    </form>
+                    <div class="footer__contacts contacts">
+                        <div class="contacts__cals">
+                            <a href="" class="contacts__link link"><span>Call us</span></a>
+                            <div class="contacts__contact">
+                                <p class="contacts__type">Phone</p>
+                                <a href="tel:(309)6926120" class="contacts__number">(309) 692 ‒ 6120</a>
+                            </div>
+                            <div class="contacts__contact">
+                                <p class="contacts__type">Fax</p>
+                                <a href="tel:(309)6926120" class="contacts__number">(309) 692 ‒ 6138</a>
+                            </div>
+                        </div>
+                        <div class="contacts__adress address">
+                            <a href="" class="adress__link link"><span>We are here</span></a>
+                            <p class="adress__text">7129 N. Gilles Rd Chicago Illinois 61528 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__social-media social-media">
+                    <p class="social-media__label"><span>garden.squad —</span>delivery of garden products</p>
+                    <div class="social-media__links">
+                        <a href="" class="social-media__link">
+                            <img src="img/footer/facebook.svg" alt="">
+                        </a>
+                        <a href="" class="social-media__link">
+                            <img src="img/footer/twitter.svg" alt="">
+                        </a>
+                        <a href="" class="social-media__link">
+                            <img src="img/footer/instagram.svg" alt="">
+                        </a>
+                        <a href="" class="social-media__link">
+                            <img src="img/footer/map.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="social-media__copyright">© 2008-2019 garden.squad, Inc.</div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
