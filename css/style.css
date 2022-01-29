@@ -168,46 +168,6 @@ h6 {
   transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* .burger span,
-.burger span:before,
-.burger span:after {
-    width: 100%;
-    height: 4px;
-    background: #333;
-    display: block;
-    transition: 0.3s;
-    border-radius: 5px;
-} */
-/* .burger span:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.burger span {
-    position: relative;
-}
-.burger span:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-} */
-/* .burger span.active:before {
-    content: "";
-    top: 0px;
-    transform: rotate(45deg);
-    transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.burger span.active:after {
-    content: "";
-    bottom: 0;
-    transform: rotate(-45deg);
-    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.burger span.active {
-    background: rgba(255, 255, 255, 0);
-} */
 /* ---ОБЩИЕ КЛАССЫ---- */
 .wraper {
   max-height: 100%;
@@ -253,12 +213,15 @@ h6 {
   -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .button:hover {
-  top: 3px;
+  top: 2px;
   -webkit-box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.25);
+  background-color: #f67d62;
 }
 
 .button:active {
@@ -347,8 +310,11 @@ h6 {
 }
 
 .menu__link a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
+  color: #f67d62;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .menu__link:hover .menu__link-sublist {
@@ -438,7 +404,9 @@ h6 {
 }
 
 .account__name:hover {
-  text-decoration: underline;
+  color: #f67d62;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -676,8 +644,7 @@ h6 {
   min-height: 56px;
   width: 223px;
   background: #f67d62;
-  -webkit-box-shadow: 0px 10px 25px rgba(246, 125, 98, 0.4);
-          box-shadow: 0px 10px 25px rgba(246, 125, 98, 0.4);
+  /* box-shadow: 0px 10px 25px rgba(246, 125, 98, 0.4); */
   border-radius: 28px;
   font-weight: 700;
   font-size: 16px;
@@ -689,6 +656,8 @@ h6 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
+  -webkit-animation: button 2s ease-in-out infinite;
+          animation: button 2s ease-in-out infinite;
 }
 
 .garden__button:hover {
@@ -696,6 +665,8 @@ h6 {
           box-shadow: 0px 5px 15px #d6310c;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-animation: none;
+          animation: none;
 }
 
 .garden__button:active {
@@ -719,6 +690,28 @@ h6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+}
+
+@-webkit-keyframes button {
+  0% {
+    -webkit-box-shadow: #f67d62 0 0 0;
+            box-shadow: #f67d62 0 0 0;
+  }
+  70% {
+    -webkit-box-shadow: #f67d6200 0 0 0 10px;
+            box-shadow: #f67d6200 0 0 0 10px;
+  }
+}
+
+@keyframes button {
+  0% {
+    -webkit-box-shadow: #f67d62 0 0 0;
+            box-shadow: #f67d62 0 0 0;
+  }
+  70% {
+    -webkit-box-shadow: #f67d6200 0 0 0 10px;
+            box-shadow: #f67d6200 0 0 0 10px;
   }
 }
 
@@ -945,7 +938,10 @@ h6 {
 }
 
 .catalog__tab:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #f67d62;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .catalog__tab:not(:last-child) {
