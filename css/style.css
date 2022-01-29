@@ -219,8 +219,8 @@ h6 {
 
 .button:hover {
   top: 2px;
-  -webkit-box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 2px 0px rgba(0, 0, 0, 0.25);
   background-color: #f67d62;
 }
 
@@ -1069,7 +1069,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 43px;
 }
 
 @media (max-width: 620px) {
@@ -1099,6 +1099,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.delivery__item > *:not(:last-child) {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 620px) {
@@ -1134,7 +1138,7 @@ h6 {
   color: #282e37;
 }
 
-.delivery__text p > {
+.delivery__text > {
   margin-bottom: 3px;
 }
 
